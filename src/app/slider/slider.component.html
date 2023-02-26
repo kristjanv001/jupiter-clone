@@ -8,14 +8,20 @@
       />
     </div>
   </div>
+
   <div
-    class="swiper-button-next"
-    (click)="onNextClick()"
+    class="button-next-container"
     [class.swiper-button-disabled]="isEnd"
-  ></div>
+    (click)="onNextClick()"
+  >
+    <div class="swiper-button-next"></div>
+  </div>
+
   <div
-    class="swiper-button-prev"
-    (click)="onPrevClick()"
+    class="button-prev-container"
     [class.swiper-button-disabled]="isBeginning"
-  ></div>
+    (click)="onPrevClick()"
+  >
+    <div class="swiper-button-prev"></div>
+  </div>
 </div>

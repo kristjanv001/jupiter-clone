@@ -60,3 +60,31 @@
 .swiper-button-disabled {
   display: none;
 }
+
+.button-next-container,
+.button-prev-container {
+  cursor: pointer;
+  background-color: rgba(32, 52, 67, 0.4);
+  height: 100%;
+  position: absolute;
+  width: 60px;
+  top: 0;
+  z-index: 10;
+}
+
+.button-next-container:hover,
+.button-prev-container:hover {
+  background-color: rgba(32, 52, 67, 0.615);
+}
+
+.button-prev-container {
+  left: 0;
+  border-bottom-right-radius: 50%;
+  border-top-right-radius: 50%;
+}
+
+.button-next-container {
+  right: 0;
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 50%;
+}
