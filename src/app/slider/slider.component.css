@@ -39,3 +39,7 @@
 .swiper-button-prev::after {
   display: none;
 }
+
+.swiper-button-disabled {
+  display: none;
+}
