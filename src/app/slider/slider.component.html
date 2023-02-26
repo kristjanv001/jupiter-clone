@@ -1,0 +1,13 @@
+<div class="swiper" id="swiper-{{ index }}">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide" *ngFor="let item of data?.slice(0, 15)">
+      <img
+        src="{{ item.verticalPhotos[0].photoUrlBase }}"
+        alt="{{ item.heading }}"
+        loading="lazy"
+      />
+    </div>
+  </div>
+  <div class="swiper-button-next" (click)="onNextClick()"></div>
+  <div class="swiper-button-prev" (click)="onPrevClick()"></div>
+</div>

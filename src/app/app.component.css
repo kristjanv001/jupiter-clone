@@ -1,0 +1,11 @@
+.container {
+  margin: 0px 12px 0px 12px;
+}
+
+h2 {
+  font-size: calc(20px + 16 * ((100vw - 320px) / 2560));
+  line-height: 22px;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  color: rgb(255, 255, 255);
+}
