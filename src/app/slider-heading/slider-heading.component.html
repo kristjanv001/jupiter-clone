@@ -1,0 +1,9 @@
+<h2 *ngIf="data.headerUrl.length > 0">
+  <a routerLink="{{ data.headerUrl }}" class="heading-container">
+    <span class="heading">{{ data.header }}</span>
+    <span class="heading-link">
+      <mat-icon aria-hidden="true" fontIcon="chevron_right"></mat-icon>
+      <span>Vaata kõiki</span>
+    </span>
+  </a>
+</h2>
