@@ -30,7 +30,7 @@ export class AppComponent {
   ngOnInit(): void {
     this.timelineService.getJupiterData().subscribe((data) => {
       this.jupiterData = data.data.category.frontPage;
-      console.log(this.jupiterData);
+      // console.log(this.jupiterData);
     });
   }
 }

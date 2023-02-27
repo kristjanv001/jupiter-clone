@@ -27,7 +27,6 @@
   width: 100%;
   height: 100%;
   background-color: #ffffff0d;
-  /* background-color: #0000001a; */
   opacity: 0;
   transition: opacity 0.2s ease;
 }
@@ -88,9 +87,4 @@
   right: 0;
   border-bottom-left-radius: 50%;
   border-top-left-radius: 50%;
-}
-
-.ss {
-  height: 30px;
-  border: 4px solid lime;
 }

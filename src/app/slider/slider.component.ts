@@ -1,10 +1,4 @@
-import {
-  Component,
-  Input,
-  OnInit,
-  AfterViewInit,
-  ViewChild,
-} from '@angular/core';
+import { Component, Input, OnInit, AfterViewInit } from '@angular/core';
 import Swiper from 'swiper';
 
 @Component({
@@ -51,8 +45,7 @@ export class SliderComponent implements OnInit, AfterViewInit {
     );
 
     this.swiper = swiperInstance;
-
-    console.log('Created a new swiper instance: ', swiperInstance);
+    // console.log('Created a new swiper instance: ', swiperInstance);
   }
 
   updateNavButtons() {
