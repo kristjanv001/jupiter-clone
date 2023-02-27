@@ -5,3 +5,9 @@
 .container {
   margin: 0px 12px 0px 12px;
 }
+
+@media screen and (min-width: 600px) {
+  .container {
+    margin: 0px 24px 0px 24px;
+  }
+}

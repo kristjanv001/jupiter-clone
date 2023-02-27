@@ -4,12 +4,7 @@
   <div class="wrapper">
     <div *ngFor="let data of jupiterData; let index = index">
       <div *ngIf="data.highTimeline" class="container">
-        <h2 class="heading" *ngIf="data.headerUrl.length === 0">
-          {{ data.header }}
-        </h2>
-
         <app-slider-heading [data]="data"></app-slider-heading>
-
         <app-slider [index]="index" [data]="data.data"></app-slider>
       </div>
     </div>
