@@ -1,9 +1,13 @@
+.wrapper {
+  padding-bottom: 35px;
+}
+
 .container {
   margin: 0px 12px 0px 12px;
 }
 
 .heading-container {
-  display: flex;
+  display: inline-flex;
   flex-direction: row;
   align-items: center;
 

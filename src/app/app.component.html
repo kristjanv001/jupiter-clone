@@ -1,19 +1,15 @@
-<header>
-  <app-header></app-header>
-</header>
+<app-header></app-header>
+
 <main>
-  <ng-container>
-    <div
-      class="wrapper"
-      *ngFor="let data of jupiterData?.slice(0, 5); let index = index"
-    >
+  <div class="wrapper">
+    <div *ngFor="let data of jupiterData?.slice(0, 5); let index = index">
       <div *ngIf="data.highTimeline" class="container">
         <h2 class="heading" *ngIf="data.headerUrl.length === 0">
           {{ data.header }}
         </h2>
 
         <h2 *ngIf="data.headerUrl.length > 0">
-          <a href="" class="heading-container">
+          <a routerLink="{{ data.headerUrl }}" class="heading-container">
             <span class="heading">{{ data.header }}</span>
             <span class="heading-link">
               <mat-icon aria-hidden="true" fontIcon="chevron_right"></mat-icon>
@@ -25,8 +21,9 @@
         <app-slider [index]="index" [data]="data.data"></app-slider>
       </div>
     </div>
-  </ng-container>
+  </div>
 </main>
-<footer></footer>
+
+<app-footer></app-footer>
 
 <router-outlet></router-outlet>

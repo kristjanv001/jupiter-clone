@@ -8,9 +8,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { SliderComponent } from './slider/slider.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, SliderComponent],
+  declarations: [AppComponent, HeaderComponent, SliderComponent, FooterComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
