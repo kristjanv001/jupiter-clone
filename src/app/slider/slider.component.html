@@ -1,11 +1,12 @@
 <div class="swiper" id="swiper-{{ index }}" #swiper>
   <div class="swiper-wrapper">
-    <div class="swiper-slide" *ngFor="let item of data?.slice(0, 15)">
+    <div class="swiper-slide" *ngFor="let item of data?.slice(0, 5)">
       <img
         src="{{ item.verticalPhotos[0].photoUrlBase }}"
         alt="{{ item.heading }}"
         loading="lazy"
       />
+      <div></div>
     </div>
   </div>
 

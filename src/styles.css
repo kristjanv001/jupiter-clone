@@ -6,7 +6,6 @@
 :root {
   background-color: #29475f;
   color: #fff;
-  text-rendering: optimizeSpeed;
 }
 
 html,
@@ -19,4 +18,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Rubik", sans-serif;
+}
+
+a {
+  text-decoration: none;
 }

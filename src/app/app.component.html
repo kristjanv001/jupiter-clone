@@ -5,10 +5,23 @@
   <ng-container>
     <div
       class="wrapper"
-      *ngFor="let data of jupiterData?.slice(0, 6); let index = index"
+      *ngFor="let data of jupiterData?.slice(0, 5); let index = index"
     >
-      <div *ngIf="data.highTimeline === true" class="container">
-        <h2>{{ data.header }}</h2>
+      <div *ngIf="data.highTimeline" class="container">
+        <h2 class="heading" *ngIf="data.headerUrl.length === 0">
+          {{ data.header }}
+        </h2>
+
+        <h2 *ngIf="data.headerUrl.length > 0">
+          <a href="" class="heading-container">
+            <span class="heading">{{ data.header }}</span>
+            <span class="heading-link">
+              <mat-icon aria-hidden="true" fontIcon="chevron_right"></mat-icon>
+              <span>Vaata kõiki</span>
+            </span>
+          </a>
+        </h2>
+
         <app-slider [index]="index" [data]="data.data"></app-slider>
       </div>
     </div>

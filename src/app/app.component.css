@@ -2,10 +2,31 @@
   margin: 0px 12px 0px 12px;
 }
 
-h2 {
-  font-size: calc(20px + 16 * ((100vw - 320px) / 2560));
-  line-height: 22px;
+.heading-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
   font-weight: 300;
   letter-spacing: 0.02em;
+  line-height: 22px;
+}
+
+.heading {
+  font-size: calc(20px + 16 * ((100vw - 320px) / 2560));
   color: rgb(255, 255, 255);
+}
+
+.heading-link {
+  font-size: calc(14px + 6 * ((100vw - 320px) / 2560));
+  color: gray;
+  text-decoration: none;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.heading-link:hover {
+  color: white;
+  text-decoration: underline;
 }
